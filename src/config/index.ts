@@ -1,0 +1,89 @@
+import { ChainId } from "@devdot/basex-sdk";
+export type AddressMap = { [chainId: number]: string }
+
+
+export const TOKEN_ADDRESS = {
+  // [ChainId.AVALANCHE_TESTNET]: '0x09291180D18faA8Df803f5c1a717FBb5b2B09537',
+  [ChainId.AVALANCHE_TESTNET]:
+    process.env.NEXT_PUBLIC_STAKING_TOKEN_AVALANCHE_TESTNET_ADDRESS,
+  [ChainId.ARBITRUM_TESTNET]:
+    process.env.NEXT_PUBLIC_STAKING_TOKEN_ARBITRUM_TESTNET_ADDRESS,
+  [ChainId.ARBITRUM]: process.env.NEXT_PUBLIC_STAKING_TOKEN_ARBITRUM_ADDRESS,
+  [ChainId.BaseSepolia]: process.env.NEXT_PUBLIC_STAKING_TOKEN_BASE_ADDRESS,
+  [ChainId.ZKSYNC]: process.env.NEXT_PUBLIC_STAKING_TOKEN_ZKSYNC_ADDRESS,
+};
+
+
+
+export const STAKING_ADDRESS = {
+  // [ChainId.AVALANCHE_TESTNET]: '0x09291180D18faA8Df803f5c1a717FBb5b2B09537',
+  [ChainId.AVALANCHE_TESTNET]:
+    process.env.NEXT_PUBLIC_STAKING_AVALANCHE_TESTNET_ADDRESS,
+  [ChainId.ARBITRUM_TESTNET]:
+    process.env.NEXT_PUBLIC_STAKING_ARBITRUM_TESTNET_ADDRESS,
+  [ChainId.ARBITRUM]: process.env.NEXT_PUBLIC_STAKING_ARBITRUM_ADDRESS,
+  [ChainId.ZKSYNC]: process.env.NEXT_PUBLIC_STAKING_ZKSYNC_ADDRESS,
+};
+
+export const FACTORY_ADDRESS = {
+  // [ChainId.AVALANCHE_TESTNET]: '0x6103C0155feD993b17E7583c2bEa96967123906a',
+  [ChainId.AVALANCHE_TESTNET]:
+    process.env.NEXT_PUBLIC_FACTORY_AVALANCHE_TESTNET_ADDRESS,
+  [ChainId.ARBITRUM_TESTNET]:
+    process.env.NEXT_PUBLIC_FACTORY_ARBITRUM_TESTNET_ADDRESS,
+  [ChainId.ARBITRUM]: process.env.NEXT_PUBLIC_FACTORY_ARBITRUM_ADDRESS,
+  [ChainId.ZKSYNC]: process.env.NEXT_PUBLIC_FACTORY_ZKSYNC_ADDRESS,
+  [ChainId.BaseSepolia]: process.env.NEXT_PUBLIC_FACTORY_BASE_ADDRESS,
+};
+type ChainTierMap = {
+  readonly [chainId in ChainId]?: Tier[];
+};
+
+export const BRIDGE_ADDRESS = {
+  [ChainId.ARBITRUM]: process.env.NEXT_PUBLIC_BRIDGE_ARBITRUM_ADDRESS,
+  [ChainId.ZKSYNC]: process.env.NEXT_PUBLIC_BRIDGE_ZKSYNC_ADDRESS,
+};
+
+export type Tier = {
+  minAmount: number;
+  level: string;
+  allocation: number;
+};
+
+export const ZKSYNC_ERA_MAINNET_CHAIN_ID = 324;
+export const ARRAY_ZKSYNC_VAULT_ADDRESS =
+  process.env.NEXT_PUBLIC_ARRAY_ZKSYNC_VAULT_ADDRESS;
+
+export const ARBITRUM_MAINNET_CHAIN_ID = 42161;
+
+export const ARRAY_ARBITRUM_VAULT_ADDRESS =
+  process.env.NEXT_PUBLIC_ARRAY_ARBITRUM_VAULT_ADDRESS;
+
+
+
+
+
+// Dex code
+
+
+const config = {
+  [ChainId.MAINNET]: {},
+}
+
+export const LAUNCHPAD_FACTORY_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0x1F324bb2FdC25a72097fb10a0fc56EdBDF638bCC',
+  [ChainId.MOONRIVER]: '0x2Fc1Cee465E13D804b299CE5e4a09C27795De231',
+}
+export const AGGREGATOR_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0x8A753747A1Fa494EC906cE90E9f37563A8AF630e',
+  [ChainId.MOONRIVER]: '0x3f8BFbDc1e79777511c00Ad8591cef888C2113C1',
+}
+
+export const ARRAY_STAKING_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0x5036cF4e60b49663e46f7D96923827d48C5EE0a1',
+}
+export const LP_STAKING_NFT_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0xFcB7bE28b07E8Bd1964c6b9faaBA6051e96bE585',
+}
+
+export default config

@@ -1,0 +1,12 @@
+Load the app: npm run dev 
+Connect metamask to Arbitrum One
+Go to page /stake 
+Notice Tier system informations (requirements, Lock period, pool weight) are loaded from 
+the smart contract 
+Notice also staking informations are loaded correctly 
+
+Now switch metamask to zkSync blockchain and notice: 
+1. Tier system informations are loaded from staking contract (Lock period is 2D on purpose 
+to make sure it s loading from zkSync 
+2. Staking information are not loaded 
+

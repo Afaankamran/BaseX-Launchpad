@@ -1,0 +1,30 @@
+{
+  "name": "BaseX",
+  "short_name": "BaseX",
+  "lang": "en",
+  "description": "Swap, yield, lend, borrow, leverage, limit, launch all on one community driven ecosystem",
+  "background_color": "#0D0415",
+  "theme_color": "#F338C3",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "splash_pages": null,
+  "prefer_related_applications": false,
+  "iconPath": "logo.png",
+  "icons": [
+    {
+      "src": "icons/manifest-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/manifest-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
