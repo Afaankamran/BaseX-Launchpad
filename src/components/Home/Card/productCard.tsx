@@ -3,11 +3,13 @@ import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 import { useIsDarkMode } from '@/state/user/hooks';
+import Link from 'next/link'; // Step 1: Import Link component
+
 const ProductsCard = ({ item, id }) => {
   const isDark = useIsDarkMode();
+
   return (
     <div>
-      {' '}
       <OutlinedCardPrimaryDark
         bgOpacity={0.1}
         sx={{
@@ -22,7 +24,14 @@ const ProductsCard = ({ item, id }) => {
           >
             <div className="flex items-center mb-5 ">
               <Image src={item.logo} alt="icons" />
-              <h3 className="ml-5 text-3xl font-bold">{item.title}</h3>
+              {/* Step 2: Wrap title with Link component if item.link exists */}
+              {item.link ? (
+                <Link href={item.link} passHref>
+                  <a className="ml-5 text-3xl font-bold">{item.title}</a>
+                </Link>
+              ) : (
+                <h3 className="ml-5 text-3xl font-bold">{item.title}</h3>
+              )}
             </div>
             <Typography color="text.light">{item.description}</Typography>
           </div>

@@ -130,7 +130,7 @@ export default function Home() {
 
         {/* <ClaimReward/> */}
 
-        <FinancialModal />
+        {/* <FinancialModal /> */}
         {/* <Team /> */}
         <LearnAndEarn />
         {/* <Partners /> */}

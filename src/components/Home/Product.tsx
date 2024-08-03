@@ -11,12 +11,13 @@ const Product = () => {
       title: 'Dex',
       description: `Experience lightning-fast, trustless trading on our decentralized exchange powered by Base Network. Swap tokens securely with minimal slippage and maximum efficiency.`,
       bgColor: 'bg-gradient-radial3',
+      link: '/swap',
     },
     {
       logo: Images.heroSection3icon2,
       title: 'Launchpad',
       description:
-        'Launch your project into orbit with Base Launchpad! Access a community-driven platform for fair and transparent token launches, leveraging the power of Base Network’s security and scalability.',
+        'Launch your project with Base Launchpad! Access a community-driven platform for fair and transparent token launches, leveraging the power of Base Network’s security and scalability.',
       bgColor: 'bg-gradient-radial3',
     },
     {

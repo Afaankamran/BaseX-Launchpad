@@ -45,10 +45,10 @@ const HorizontalLine = styled(Box)`
 `;
 
 
-const Q2 = ["Launchpad & DEX Development", "Token Generator"]
+const Q2 = ["DEX Development", "Token Generator"]
 const Q3 = ["LaunchPad", "KYC and Audits", "Anti-bot", "Multi Sender"]
 // const Q3 = ["Fork token generator of Kaichain", "Hello Token", "Simple Token", "Standard Token", "Burnable Token", "Mint Token", "Pausable Token", "Common Token", "Deflationary token", "Texable token"]
-// const Q4 = ["CEX Launch", "Launchpad Refinement"]
+ const Q4 = ["CEX Launch", "Launchpad Refinement"]
 export const buying = [
   {
     title: 'Q2 - 2024',
@@ -98,22 +98,22 @@ export const buying = [
   //     </OutlinedCardPrimaryDark>,
   //   icon: '/rainbowHorse.svg',
   // },
-  // {
-  //   title: 'Q4 - 2024',
-  //   subtitle:
-  //     <OutlinedCardPrimaryDark bgOpacity={0.1}>
-  //       {Q4.map((q, i) => {
-  //         return <div className="flex px-4 py-2" key={i}>
-  //           <div className="">
-  //             <Image src={Images.MapCheck} />
-  //           </div>
-  //           <div className=" px-3 ">{q}</div>
-  //         </div>
-  //       })}
+  {
+    title: 'Q4 - 2024',
+    subtitle:
+      <OutlinedCardPrimaryDark bgOpacity={0.1}>
+        {Q4.map((q, i) => {
+          return <div className="flex px-4 py-2" key={i}>
+            <div className="">
+              <Image src={Images.MapCheck} />
+            </div>
+            <div className=" px-3 ">{q}</div>
+          </div>
+        })}
 
-  //     </OutlinedCardPrimaryDark>,
-  //   icon: '/apsWithcoins.svg',
-  // },
+      </OutlinedCardPrimaryDark>,
+    icon: '/apsWithcoins.svg',
+  },
 ];
 
 

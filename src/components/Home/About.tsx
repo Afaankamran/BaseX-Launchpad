@@ -42,10 +42,10 @@ export default function About() {
                   className="mb-8 leading-relaxed text-center"
                   fontSize='20px'
                 >
-                  BaseX Introduces its own Decentralized Launchpad platform which aims to host projects launching exclusively on the Base Network.
+                  BaseX Introduces its own Decentralized Exchange platform which aims to host projects launching exclusively on the Base Network.
                   <br />
                   <br />
-                  BaseX aims to create a viable ecosystem by featuring its own Decentralized Exchange to allow for trading and Liquidity farming. Additionally, BaseX will use it’s Venture Arm to invest in developers building #RealYield protocols which will generate returns for its Users.
+                  BaseX aims to create a viable ecosystem by featuring its own Decentralized Exchange to allow for trading and Liquidity farming. Additionally, BaseX will use it’s Venture Arm to invest in developers building several protocols which will generate returns for its Users.
                 </Typography>
               </div>
 

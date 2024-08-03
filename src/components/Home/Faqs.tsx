@@ -65,33 +65,33 @@ export default function Faqs() {
     {
       question: 'What kind of projects will BaseX host?',
       answer:
-        'BaseX will exclusively host Arbitrum native #RealYield projects with sustainable revenue models.',
+        'BaseX will exclusively host projects on Base network with sustainable revenue models.',
     },
     {
       question: "How safe are BaseX's launches?",
       answer:
-        'All of BaseX\'s launches are KYC\'ed, Multisigged & Audited. We try our best to guarantee safe investments but are not liable for any malicious or hacks activity outside of our control. Read our Terms & Conditions for more.',
+        'Investors should check whether the project in KYCed and audited. BaseX will try their best to guarantee safe investments but are not liable for any malacious or hack activities outside of their control. Investments will always pose a real risk.',
     },
     {
       question: 'How do i participate in IDOs?',
       answer:
-        'For $BaseX\'s own token IDO, there are no staking requirements. For subsequent project IDO\'s you must be staked 24 hours before the IDO begins. Read our Gitbook for more',
+        'For Launchpads, wait for the sale to start. Once the sale starts, connect your wallet and send it how much you want to invest.',
     },
     {
       question: 'Are there Participation limits?',
       answer:
-        'Participation of users are decided by the staking allocation weight pools. The more the stake the more you can invest in our IDO\'s.',
+        'Participation limits of the investors are decided by project owners. Please check their terms and conditions in investing.',
     },
     {
       question: 'When will i receive the project tokens after the IDO is finished?',
       answer:
         'Each project TGE date & Vesting schedule is unique, all dates are mentioned in the IDO Pages.',
     },
-    {
-      question: 'What are the launch price premium?',
-      answer:
-        'We aim for a 20% launch price premium at TGE, but that is up to the team\'s final discretion.',
-    },
+    // {
+    //   question: 'What are the launch price premium?',
+    //   answer:
+    //     'We aim for a 20% launch price premium at TGE, but that is up to the team\'s final discretion.',
+    // },
     {
       question: 'How do i apply as a project for IDO?',
       answer:
