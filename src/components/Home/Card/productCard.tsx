@@ -1,5 +1,5 @@
 import { OutlinedCardPrimaryDark } from '@/components/OutlinedCard';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 import { useIsDarkMode } from '@/state/user/hooks';
@@ -34,6 +34,14 @@ const ProductsCard = ({ item, id }) => {
               )}
             </div>
             <Typography color="text.light">{item.description}</Typography>
+            {/* Step 3: Add button for Dex product */}
+            {item.title === 'Dex' && item.link && (
+              <Box mt={2}>
+                <Link href={item.link} passHref>
+                  <Button variant="contained" color="primary">Go to DEX</Button>
+                </Link>
+              </Box>
+            )}
           </div>
         </div>
       </OutlinedCardPrimaryDark>

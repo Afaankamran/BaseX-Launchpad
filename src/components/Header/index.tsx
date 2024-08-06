@@ -36,7 +36,7 @@ import { OutlinedCard } from "../OutlinedCard";
 import CountDown from "../CountDown";
 import { useLaunchpads } from "@/hooks/useLaunchpadPools";
 import getEarlyPool from "@/functions/getEarlyPools";
-import baseXLogo from "../../../public/images/BASE X white-01.png"; // Import the logo image
+import baseXLogo from "../../../public/images/BASE X white-01.png";
 
 type Anchor = "right";
 
